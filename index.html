@@ -1,12 +1,233 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+<head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Nerds</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+</head>
+<body>
+  <header class="top-header">
+    <div class="container clearfix">
+      <nav class="main-menu">
+    	<a class="logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Нердс">
+      </a>
+        <ul class="menu">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+          <a class="basket basket-active" href="#">Корзина</a>
+      </nav>
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <h1 class="visibility-hidden">Студия Нердс</h1>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-content">
+              <h2 class="slide-title">Долго, дорого, скрупулезно.</h2>
+              <p class="slide-text">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+              <a class="slide-btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <h2 class="slide-title">Любим математику как никто другой</h2>
+              <p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slide-btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <h2 class="slide-title">Только ночь, только хардкор</h2>
+              <p class="slide-text">Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+              <a class="slide-btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+  	<div class="container clearfix">
+  		<ul class="groups">
+        <li class="group-web">
+          <img src="img/illustration-1.jpg" width="300" height="146" alt="заказать веб-сайт">
+          <h3 class="group-title">Веб-сайты</h3>
+          <p class="group-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <div class="group-btn web-btn">
+            <a>Заказать</a>
+          </div>
+        </li>
+        <li class="group-apps">
+          <img src="img/illustration-2.jpg" width="300" height="146" alt="заказать приложение">
+          <h3 class="group-title">Приложения</h3>
+          <p class="group-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <div class="group-btn apps-btn">
+            <a>Заказать</a>
+          </div>
+        </li>
+        <li class="group-prezi">
+          <img src="img/illustration-3.jpg" width="300" height="146" alt="заказать презентацию">
+          <h3 class="group-title">Презентации</h3>
+          <p class="group-text">Вы даже не подозреваете насколько вы изумительны!</p>
+          <div class="group-btn prezi-btn">
+            <a>Заказать</a>
+          </div>
+        </li>
+      </ul>
+      <div class="description">
+          <div class="descripton-title">
+            <b class="description-subtitle">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p class="description-info">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
+            Работаем не покладая рук, как роботы.</p>
+          <p class="description-caption">Выполняем заказы на разработку:</p>
+          <ul class="description-items">
+            <li class="description-item">Веб-сайтов любой сложности</li>
+           	<li class="description-item">Мобильных приложений для iOS и Android</li>
+            <li class="description-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="attr">
+          <img src="img/nerds-illustration.png" width="360" height="208" alt="nerds в цифрах">
+          <p class="attr-text">С 2004 года любим точность во всем:</p>
+          <ul class="percent">
+            <li class="percent-work">146<span class="percent-sup">%</span>
+              <p class="percent-text">Уровень самоотдачи</p>
+            </li>
+            <li class="percent-terms">100<span class="percent-sup">%</span>
+            	<p class="percent-text">Соблюдение сроков </p>
+            </li>
+            <li class="percent-cash">50<span class="percent-sup">%</span>
+            	<p class="percent-text">Минимальная предоплата </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+  	    <ul class="brands">
+          <li>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-1.png" width="260" height="91" alt="Пaртнер htmlacademy">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/logo-2.png" width="260" height="91" alt="Пaртнер Барбершоп Бородинский">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/logo-3.png" width="260" height="91" alt="Пaртнер Pink">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/logo-4.png" width="260" height="91" alt="Пaртнер Mishka">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+      <footer>
+        <div class="map">
+          <img src="img/map.jpg" width="1440" height="416" alt="Компания Нердс находится по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <div class="map-form">
+            <h2 class="map-form-title">Nёrds design studio</h2>
+            <p class="form-content-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="form-content-tel">тел. +7 (812) 275-75-75</p>
+            <a href="writeus.html" class="write-us-button">Напишите нам</a>
+          </div>
+        </div>
+        <div class="container clearfix">
+          <div class="bottom-footer">
+            <ul class="social">
+              <li class="social-btn social-vk">
+                <a href="vk.com">vk</a>
+              </li>
+              <li class="social-btn social-fb">
+                <a href="fb.com">fb</a>
+              </li>
+              <li class="social-btn social-insta">
+                <a href="insta.com">insta</a>
+              </li>
+            </ul>
+          </div>
+          <section class="footer-friend"><b>Давайте дружить, это выгодно!</b>
+            <p class="friend-text">Скидка 10% для друзей из социальных сетей</p>
+          </section>
+        </div>
+    </footer>
+    <div class="modal-content">
+      <div class="modal-top">
+        <h2 class="write-us-title">Напишите нам</h2>
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      </div>
+      <form action="form.php" method="GET" name="write-us">
+        <div class="form-header">
+          <div class="name">
+            <p>Ваше имя:</p>
+            <input name="yourname" type="text" placeholder="Представтесь, пожалуйста" autofocus >
+          </div>
+          <div class="email">
+            <p>Ваш e-mail:</p>
+            <input name="email" type="email" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <p class="text-letter">Текст письма:</p>
+        <textarea placeholder="В свободной форме" cols="760" rows="100" required></textarea>
+        <input type="submit" class="sent-btn" value="Отправить">
+      </form>
+    </div>
+    <script>
+      var link = document.querySelector(".write-us-button");
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+      var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=yourname]");
+      var email = popup.querySelector("[name=email]");
+      var storage = localStorage.getItem("login");
+      link.addEventListener ("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        if (storage) {
+          login.value = storage;
+        } else {
+        login.focus();
+      }
+      });
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      })
+        form.addEventListener("submit",function(event) {
+          if (!login.value || !email.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("login", login.value);
+        }
+        });
+        window.addEventListener ("keydown", function(event) {
+          if (event.keyCode === 27) {
+            if (popup.classList.contains("modal-content-show")) {
+              popup.classList.remove("modal-content-show");
+              popup.classList.remove("modal-error");
+                }
+              }
+          });
+    </script>
   </body>
 </html>
