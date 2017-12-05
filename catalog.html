@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-        <meta charset="utf-8">
-        <title>HTML Academy: Nerds</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/normalize.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>HTML Academy: Nerds</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style_min.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
   <header class="top-header-catalog">
@@ -14,17 +14,17 @@
     	<a href="index.html" class="logo logo-active">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
       </a>
-        <ul class="menu">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li  class="site-navigation-current"><a>Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-          <a class="basket" href="#">Корзина</a>
+      <ul class="menu">
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li  class="site-navigation-current"><a>Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+        <a class="basket" href="#">Корзина</a>
       </nav>
       <h2 class="catalog-title">Магазин готовых шаблонов</h2>
-  </div>
-</header>
+    </div>
+  </header>
   <main>
   	<div class="container clearfix">
       <div class="catalog-content">
@@ -195,7 +195,8 @@
   </main>
   <footer>
     <div class="map">
-      <img src="img/map.jpg" width="1440" height="416" alt="Компания Нердс находится по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <img class="map-img" src="img/map.jpg" width="1200" height="420" alt="адрес компании Нердс">
+      <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Компания Нердс находится по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <div class="map-form">
         <h2 class="map-form-title">Nёrds design studio</h2>
         <p class="form-content-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -221,6 +222,28 @@
         <p class="friend-text">Скидка 10% для друзей из социальных сетей</p>
       </section>
     </div>
-</footer>
-  </body>
+  </footer>
+  <div class="modal-content">
+    <div class="modal-top">
+      <h2 class="write-us-title">Напишите нам</h2>
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    </div>
+    <form action="form.php" method="GET" name="write-us">
+      <div class="form-header">
+        <div class="name">
+          <p>Ваше имя:</p>
+          <input name="yourname" type="text" placeholder="Представтесь, пожалуйста" autofocus >
+        </div>
+        <div class="email">
+          <p>Ваш e-mail:</p>
+          <input name="email" type="email" placeholder="Для отправки ответа">
+        </div>
+      </div>
+      <p class="text-letter">Текст письма:</p>
+      <textarea placeholder="В свободной форме" cols="760" rows="100" required></textarea>
+      <input type="submit" class="sent-btn" value="Отправить">
+    </form>
+  </div>
+  <script src="js/scripts_min.js"></script>
+</body>
 </html>

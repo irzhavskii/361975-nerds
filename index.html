@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-        <meta charset="utf-8">
-        <title>HTML Academy: Nerds</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/normalize.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>HTML Academy: Nerds</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style_min.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
   <header class="top-header">
     <div class="container clearfix">
       <nav class="main-menu">
-    	<a class="logo">
+      	<a class="logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Нердс">
-      </a>
+        </a>
         <ul class="menu">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
@@ -87,8 +87,8 @@
         </li>
       </ul>
       <div class="description">
-          <div class="descripton-title">
-            <b class="description-subtitle">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <div class="description-title">
+          <p class="description-subtitle">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="description-info">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
             Работаем не покладая рук, как роботы.</p>
           <p class="description-caption">Выполняем заказы на разработку:</p>
@@ -114,7 +114,8 @@
           </ul>
         </div>
       </div>
-  	    <ul class="brands">
+      <div class="brands">
+  	    <ul class="brands-list">
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-1.png" width="260" height="91" alt="Пaртнер htmlacademy">
@@ -137,97 +138,59 @@
           </li>
         </ul>
       </div>
-    </main>
-      <footer>
-        <div class="map">
-          <img src="img/map.jpg" width="1440" height="416" alt="Компания Нердс находится по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-          <div class="map-form">
-            <h2 class="map-form-title">Nёrds design studio</h2>
-            <p class="form-content-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="form-content-tel">тел. +7 (812) 275-75-75</p>
-            <a href="writeus.html" class="write-us-button">Напишите нам</a>
-          </div>
-        </div>
-        <div class="container clearfix">
-          <div class="bottom-footer">
-            <ul class="social">
-              <li class="social-btn social-vk">
-                <a href="vk.com">vk</a>
-              </li>
-              <li class="social-btn social-fb">
-                <a href="fb.com">fb</a>
-              </li>
-              <li class="social-btn social-insta">
-                <a href="insta.com">insta</a>
-              </li>
-            </ul>
-          </div>
-          <section class="footer-friend"><b>Давайте дружить, это выгодно!</b>
-            <p class="friend-text">Скидка 10% для друзей из социальных сетей</p>
-          </section>
-        </div>
-    </footer>
-    <div class="modal-content">
-      <div class="modal-top">
-        <h2 class="write-us-title">Напишите нам</h2>
-        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      </div>
-      <form action="form.php" method="GET" name="write-us">
-        <div class="form-header">
-          <div class="name">
-            <p>Ваше имя:</p>
-            <input name="yourname" type="text" placeholder="Представтесь, пожалуйста" autofocus >
-          </div>
-          <div class="email">
-            <p>Ваш e-mail:</p>
-            <input name="email" type="email" placeholder="Для отправки ответа">
-          </div>
-        </div>
-        <p class="text-letter">Текст письма:</p>
-        <textarea placeholder="В свободной форме" cols="760" rows="100" required></textarea>
-        <input type="submit" class="sent-btn" value="Отправить">
-      </form>
     </div>
-    <script>
-      var link = document.querySelector(".write-us-button");
-      var popup = document.querySelector(".modal-content");
-      var close = popup.querySelector(".modal-content-close");
-      var form = popup.querySelector("form");
-      var login = popup.querySelector("[name=yourname]");
-      var email = popup.querySelector("[name=email]");
-      var storage = localStorage.getItem("login");
-      link.addEventListener ("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("modal-content-show");
-        if (storage) {
-          login.value = storage;
-        } else {
-        login.focus();
-      }
-      });
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-show");
-        popup.classList.remove("modal-error");
-      })
-        form.addEventListener("submit",function(event) {
-          if (!login.value || !email.value) {
-          event.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-        } else {
-          localStorage.setItem("login", login.value);
-        }
-        });
-        window.addEventListener ("keydown", function(event) {
-          if (event.keyCode === 27) {
-            if (popup.classList.contains("modal-content-show")) {
-              popup.classList.remove("modal-content-show");
-              popup.classList.remove("modal-error");
-                }
-              }
-          });
-    </script>
-  </body>
+  </main>
+  <footer>
+    <div class="map">
+      <img class="map-img" src="img/map.jpg" width="1200" height="416" alt="адрес компании Нердс">
+      <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Компания Нердс находится по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <div class="map-form">
+        <h2 class="map-form-title">Nёrds design studio</h2>
+        <p class="form-content-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="form-content-tel">тел. +7 (812) 275-75-75</p>
+        <a href="writeus.html" class="write-us-button">Напишите нам</a>
+      </div>
+    </div>
+    <div class="container clearfix">
+      <div class="bottom-footer">
+        <ul class="social">
+          <li class="social-btn social-vk">
+            <a href="vk.com">vk</a>
+          </li>
+          <li class="social-btn social-fb">
+            <a href="fb.com">fb</a>
+          </li>
+          <li class="social-btn social-insta">
+            <a href="insta.com">insta</a>
+          </li>
+        </ul>
+      </div>
+      <section class="footer-friend"><b>Давайте дружить, это выгодно!</b>
+        <p class="friend-text">Скидка 10% для друзей из социальных сетей</p>
+      </section>
+    </div>
+  </footer>
+  <div class="modal-content">
+    <div class="modal-top">
+      <h2 class="write-us-title">Напишите нам</h2>
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    </div>
+    <form action="form.php" method="GET" name="write-us">
+      <div class="form-header">
+        <div class="name">
+          <p>Ваше имя:</p>
+          <input name="yourname" type="text" placeholder="Представтесь, пожалуйста" autofocus >
+        </div>
+        <div class="email">
+          <p>Ваш e-mail:</p>
+          <input name="email" type="email" placeholder="Для отправки ответа">
+        </div>
+      </div>
+      <p class="text-letter">Текст письма:</p>
+      <textarea placeholder="В свободной форме" cols="760" rows="100" required></textarea>
+      <input type="submit" class="sent-btn" value="Отправить">
+    </form>
+  </div>
+  <script src="js/scripts_min.js"></script>
+</body>
 </html>
